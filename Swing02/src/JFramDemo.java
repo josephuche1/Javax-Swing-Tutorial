@@ -8,8 +8,8 @@ public class JFramDemo {
 			
 			@Override
 			public  void run() {
-				JFrameOne main = new JFrameOne();
-				main.initialize();
+				JFrameOne main1 = new JFrameOne();
+				JFrameTwo main2 = new JFrameTwo();
 			}
 		});
 
