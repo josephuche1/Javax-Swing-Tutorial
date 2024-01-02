@@ -18,7 +18,10 @@ public class MainFrame {
 		this.frame.setSize(800, 500);
 		this.frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		this.frame.setLocationRelativeTo(null);
-		this.frame.setLayout(new BorderLayout(5, 5));
+		BorderLayout borderLayout = new BorderLayout();
+		borderLayout.setHgap(10);
+		borderLayout.setVgap(10);
+		this.frame.setLayout(borderLayout);
 		
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.BLUE);
