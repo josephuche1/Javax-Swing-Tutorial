@@ -18,9 +18,9 @@ public class MainFrame {
 		this.frame.setSize(800, 500);
 		this.frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		this.frame.setLocationRelativeTo(null);
-		panel = new JPanel(new GridLayout(4, 5, 10,10));
+		panel = new JPanel(new GridLayout(0, 4, 10,10));
 		
-		for(int i = 1; i <= 20; i++) {
+		for(int i = 1; i <= 30; i++) {
 			JButton button = new JButton("Button "+i);
 			panel.add(button);
 		}
