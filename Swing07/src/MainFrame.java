@@ -1,4 +1,5 @@
 import java.awt.BorderLayout;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
@@ -9,6 +10,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 
 public class MainFrame {
 	private JFrame frame;
@@ -60,6 +62,15 @@ public class MainFrame {
 				System.out.println("new button");
 			}
 		});
+		
+		button.setEnabled(true);
+		button.doClick();
+//		button.setVerticalTextPosition(SwingConstants.BOTTOM);
+//		button.setVerticalTextPosition(SwingConstants.CENTER);
+		button.setHorizontalTextPosition(SwingConstants.LEFT);
+		button.setVerticalTextPosition(SwingConstants.CENTER);
+		
+		button.setPreferredSize(new Dimension(200, 75));
 		return button;
 	}
 }
