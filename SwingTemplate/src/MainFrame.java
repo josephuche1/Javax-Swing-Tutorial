@@ -11,7 +11,7 @@ public class MainFrame {
 	
 	public void initialize() {
 		frame = new JFrame();
-		this.frame.setTitle("Learning Border Layout");
+		this.frame.setTitle("Swing Template");
 		this.frame.setSize(800, 500);
 		this.frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		this.frame.setLocationRelativeTo(null);
